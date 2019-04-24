@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JXP-Wt-DZB">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--map-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="PointsViewController" customModule="EcologyLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                                <rect key="frame" x="131.66666666666666" y="346.66666666666669" width="150.99999999999997" height="43"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.58130641572740704" green="1" blue="0.70388040567623666" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
+                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="map" image="ic_tab_map" id="acW-dT-cKf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="771" y="-671"/>
+        </scene>
+        <!--Переработка вторичного сырья-->
+        <scene sceneID="V3d-dp-ge4">
+            <objects>
+                <viewController id="pVu-gg-bZl" customClass="RecycleViewController" customModule="EcologyLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iBI-cP-GWk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="54t-7B-Wms">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kQe-lI-H8l">
+                                    <size key="itemSize" width="414" height="311"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="recycleCell" id="3HW-dk-oYE" customClass="RecycleCollectionViewCell" customModule="EcologyLife" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="311"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="311"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCN-gH-CBr">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="41"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="23"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Oy-d1-0ZI">
+                                                    <rect key="frame" x="20" y="48" width="374" height="241"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <size key="customSize" width="414" height="311"/>
+                                        <connections>
+                                            <outlet property="recycleImageView" destination="8Oy-d1-0ZI" id="sCz-Zz-cLe"/>
+                                            <outlet property="recycleNameLabel" destination="zCN-gH-CBr" id="6FB-yn-5eO"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="lbh-IQ-MSf"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Переработка вторичного сырья" id="wnr-Vm-lfG"/>
+                    <connections>
+                        <outlet property="recycleCollectionView" destination="54t-7B-Wms" id="oFr-Xx-Nd3"/>
+                        <segue destination="hAs-5n-paw" kind="show" identifier="showTVC" id="xsm-cW-1Ra"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IMy-qy-YEe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2412" y="-553"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="mtK-tQ-hHC">
+            <objects>
+                <viewController id="hAs-5n-paw" customClass="DetailViewController" customModule="EcologyLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="URS-UI-3hi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3aJ-Op-6QS">
+                                <rect key="frame" x="0.0" y="57" width="414" height="622"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S0V-vQ-7iS">
+                                        <rect key="frame" x="-20" y="-20" width="434" height="662"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lml-X8-tGF">
+                                                <rect key="frame" x="20" y="34" width="414" height="302"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="302" id="UW4-h6-gW0"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOv-4l-F3B">
+                                                <rect key="frame" x="20" y="135" width="414" height="100"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="V9S-Re-Zt1"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="23"/>
+                                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Label " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQb-dD-GGO">
+                                                <rect key="frame" x="36" y="352" width="56" height="20"/>
+                                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="18"/>
+                                                <color key="textColor" red="0.3921568627" green="0.68627450980000004" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTB-mM-mgz">
+                                                <rect key="frame" x="36" y="388" width="390" height="20.666666666666686"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="390" id="pjs-dR-LcS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="lml-X8-tGF" secondAttribute="trailing" id="577-mj-Dow"/>
+                                            <constraint firstItem="lml-X8-tGF" firstAttribute="centerY" secondItem="AOv-4l-F3B" secondAttribute="centerY" id="BjB-7g-dC6"/>
+                                            <constraint firstItem="lml-X8-tGF" firstAttribute="leading" secondItem="AOv-4l-F3B" secondAttribute="leading" id="HIA-iR-aTy"/>
+                                            <constraint firstItem="PQb-dD-GGO" firstAttribute="leading" secondItem="S0V-vQ-7iS" secondAttribute="leading" constant="36" id="IBF-tg-31G"/>
+                                            <constraint firstItem="lml-X8-tGF" firstAttribute="trailing" secondItem="AOv-4l-F3B" secondAttribute="trailing" id="Lqd-YW-Ucm"/>
+                                            <constraint firstItem="lml-X8-tGF" firstAttribute="top" secondItem="S0V-vQ-7iS" secondAttribute="top" constant="34" id="Ri3-EM-KtS"/>
+                                            <constraint firstItem="PQb-dD-GGO" firstAttribute="leading" secondItem="qTB-mM-mgz" secondAttribute="leading" id="Vli-Cb-rpd"/>
+                                            <constraint firstItem="AOv-4l-F3B" firstAttribute="leading" secondItem="S0V-vQ-7iS" secondAttribute="leading" constant="20" id="YIP-dc-ri4"/>
+                                            <constraint firstItem="qTB-mM-mgz" firstAttribute="top" secondItem="PQb-dD-GGO" secondAttribute="bottom" constant="16" id="m8q-z2-aOa"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PQb-dD-GGO" secondAttribute="trailing" constant="20" symbolic="YES" id="mWD-hp-WEl"/>
+                                            <constraint firstItem="qTB-mM-mgz" firstAttribute="trailing" secondItem="S0V-vQ-7iS" secondAttribute="trailingMargin" id="mat-NW-60Z"/>
+                                            <constraint firstItem="PQb-dD-GGO" firstAttribute="top" secondItem="lml-X8-tGF" secondAttribute="bottom" constant="16" id="pHR-SG-DT6"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="S0V-vQ-7iS" firstAttribute="centerY" secondItem="3aJ-Op-6QS" secondAttribute="centerY" id="Ooy-T6-JQq"/>
+                                    <constraint firstItem="S0V-vQ-7iS" firstAttribute="leading" secondItem="3aJ-Op-6QS" secondAttribute="leading" constant="-20" id="Vxv-26-svF"/>
+                                    <constraint firstAttribute="trailing" secondItem="S0V-vQ-7iS" secondAttribute="trailing" id="Yqu-ly-HUI"/>
+                                    <constraint firstItem="S0V-vQ-7iS" firstAttribute="top" secondItem="3aJ-Op-6QS" secondAttribute="top" constant="-20" id="Z52-RD-Caw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3aJ-Op-6QS" secondAttribute="trailing" id="3bW-fb-eMp"/>
+                            <constraint firstItem="3aJ-Op-6QS" firstAttribute="centerY" secondItem="URS-UI-3hi" secondAttribute="centerY" id="6zD-18-djo"/>
+                            <constraint firstItem="ysj-cz-o0D" firstAttribute="bottom" secondItem="3aJ-Op-6QS" secondAttribute="bottom" constant="8" id="IcJ-9r-CwD"/>
+                            <constraint firstItem="3aJ-Op-6QS" firstAttribute="leading" secondItem="URS-UI-3hi" secondAttribute="leading" id="KhL-eT-RBh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ysj-cz-o0D"/>
+                    </view>
+                    <connections>
+                        <outlet property="recNotificaionNameLabel" destination="PQb-dD-GGO" id="nDN-ga-HCH"/>
+                        <outlet property="recycleImageView" destination="lml-X8-tGF" id="wrm-ZY-rbP"/>
+                        <outlet property="recycleNameLabel" destination="AOv-4l-F3B" id="UTu-pi-JGO"/>
+                        <outlet property="recycleTextLabel" destination="qTB-mM-mgz" id="vtL-sv-aNG"/>
+                        <outlet property="scrollView" destination="S0V-vQ-7iS" id="eon-r2-ZfI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jtu-bi-NjD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3070" y="-557"/>
+        </scene>
+        <!--Статьи на тему экологии-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="ArticlesViewController" customModule="EcologyLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
+                                <rect key="frame" x="106.66666666666669" y="346.66666666666669" width="201" height="43"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
+                                <rect key="frame" x="99.666666666666686" y="397.66666666666669" width="215" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WH6-YT-iEa">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fF0-2d-3Ge">
+                                    <size key="itemSize" width="414" height="311"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="menuCell" id="k2c-t8-ort" customClass="ArticlesCollectionViewCell" customModule="EcologyLife" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="311"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="311"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Pm-pz-fTf">
+                                                    <rect key="frame" x="20" y="48" width="374" height="241"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CS-08-CRq">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="41"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="23"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <connections>
+                                            <outlet property="imageView" destination="9Pm-pz-fTf" id="csz-V5-nX1"/>
+                                            <outlet property="nameLabel" destination="5CS-08-CRq" id="jPa-h1-Ayx"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
+                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
+                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
+                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Статьи на тему экологии" id="Obb-0q-Ztf"/>
+                    <connections>
+                        <outlet property="collectionView" destination="WH6-YT-iEa" id="yxA-7T-BHu"/>
+                        <segue destination="fuZ-7z-VCm" kind="show" identifier="showART" id="Fb7-G4-HPF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1522" y="841"/>
+        </scene>
+        <!--Article View Controller-->
+        <scene sceneID="5XM-kq-CMW">
+            <objects>
+                <viewController id="fuZ-7z-VCm" customClass="ArticleViewController" customModule="EcologyLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BiS-Y3-MpB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="psm-dp-6hZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uF7-7y-yPY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2217" y="839"/>
+        </scene>
+        <!--Экосоветы-->
+        <scene sceneID="ULA-5K-h9B">
+            <objects>
+                <viewController id="e13-TN-b1b" customClass="TipsViewController" customModule="EcologyLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TE6-EI-3hc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="68N-3g-uX8">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RPF-t8-b98">
+                                    <size key="itemSize" width="414" height="311"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="tipsCell" id="wKP-f6-7hN" customClass="TipsCollectionViewCell" customModule="EcologyLife" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="311"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="311"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gq8-qT-IoF">
+                                                    <rect key="frame" x="20" y="20" width="374" height="241"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpv-5B-mJH">
+                                                    <rect key="frame" x="0.0" y="93" width="414" height="100"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="9wp-hQ-IZT"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="23"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="dpv-5B-mJH" firstAttribute="leading" secondItem="wKP-f6-7hN" secondAttribute="leadingMargin" id="1IA-Qu-cZ3"/>
+                                            <constraint firstItem="gq8-qT-IoF" firstAttribute="top" secondItem="wKP-f6-7hN" secondAttribute="topMargin" id="Hfd-kj-rkq"/>
+                                            <constraint firstItem="dpv-5B-mJH" firstAttribute="centerX" secondItem="wKP-f6-7hN" secondAttribute="centerX" id="XbQ-zH-GPJ"/>
+                                            <constraint firstItem="dpv-5B-mJH" firstAttribute="centerY" secondItem="wKP-f6-7hN" secondAttribute="centerY" id="aCD-WY-h52"/>
+                                            <constraint firstItem="dpv-5B-mJH" firstAttribute="trailing" secondItem="gq8-qT-IoF" secondAttribute="trailing" id="bc0-jE-EAi"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="gq8-qT-IoF" secondAttribute="bottom" constant="11" id="dWY-l6-8AK"/>
+                                            <constraint firstItem="dpv-5B-mJH" firstAttribute="leading" secondItem="gq8-qT-IoF" secondAttribute="leading" id="uZ2-ht-Sci"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="tipsImageView" destination="gq8-qT-IoF" id="Bbh-DE-F6K"/>
+                                            <outlet property="tipsNameLabel" destination="dpv-5B-mJH" id="YcP-wi-baF"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yPe-PP-V0P"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Экосоветы" id="zPb-jf-Cut"/>
+                    <connections>
+                        <outlet property="tipsCollectionView" destination="68N-3g-uX8" id="KeE-42-LQ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bGt-9Z-QeL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3100.0000000000005" y="131.25"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="5IO-2O-vej">
+            <objects>
+                <viewController id="JXP-Wt-DZB" customClass="SplashViewController" customModule="EcologyLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yqS-Zm-PIW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ecology Life" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1z-84-8ru">
+                                <rect key="frame" x="117" y="445" width="194" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="31"/>
+                                <color key="textColor" red="0.3333153278534966" green="0.68627450980392157" blue="0.58950503189573977" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_launch" translatesAutoresizingMaskIntoConstraints="NO" id="Z38-ls-AQV">
+                                <rect key="frame" x="89" y="176" width="250" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="5tA-JH-Bke"/>
+                    </view>
+                    <connections>
+                        <segue destination="49e-Tb-3d3" kind="presentation" identifier="nextPage" id="ggT-WO-EzD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8v8-6P-AV5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-728.98550724637687" y="0.0"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.38524960411492332" green="0.75331862123021787" blue="0.52026961483538625" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="bqo-2E-LV8" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="SYq-QM-bSb" kind="relationship" relationship="viewControllers" id="84Q-4r-e6E"/>
+                        <segue destination="nCP-5t-tMD" kind="relationship" relationship="viewControllers" id="1sq-xJ-hgX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--articles-->
+        <scene sceneID="qGK-av-gun">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bqo-2E-LV8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="articles" image="ic_tab_articles" id="cPa-gy-q4n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lOk-vW-1qH">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="veT-e2-raa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jjx-yO-tU2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="841"/>
+        </scene>
+        <!--recycle-->
+        <scene sceneID="hI9-H3-dSC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SYq-QM-bSb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="recycle" image="ic_tab_recycle" id="3wB-1q-aBR"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pc7-PC-K6G">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pVu-gg-bZl" kind="relationship" relationship="rootViewController" id="bG1-e5-a7o"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i6g-zP-ibA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1704" y="-554"/>
+        </scene>
+        <!--tips-->
+        <scene sceneID="uxJ-EA-v9R">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nCP-5t-tMD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="tips" image="ic_tab_tips" id="Gf5-GG-njG"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c9P-qK-SLi">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="e13-TN-b1b" kind="relationship" relationship="rootViewController" id="1ww-p3-XPJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SH8-vI-y2u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2412" y="132"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_launch" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="ic_tab_articles" width="48" height="48"/>
+        <image name="ic_tab_map" width="48" height="48"/>
+        <image name="ic_tab_recycle" width="48" height="48"/>
+        <image name="ic_tab_tips" width="48" height="48"/>
+    </resources>
+</document>

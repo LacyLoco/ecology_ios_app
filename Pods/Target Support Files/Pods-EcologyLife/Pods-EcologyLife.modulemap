@@ -1,0 +1,6 @@
+module Pods_EcologyLife {
+  umbrella header "Pods-EcologyLife-umbrella.h"
+
+  export *
+  module * { export * }
+}
